@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ - Trường THPT Nguyễn Hữu Cảnh</title>
-
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f6f9;
-        }
-
+            }
         header {
             display: flex;
             align-items: center;
@@ -21,13 +18,11 @@
             background-color: #1e3a8a;
             color: white;
         }
-
         .logo-area {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-
         .logo-area img {
             width: 70px;
             height: 70px;
@@ -35,12 +30,10 @@
             object-fit: cover;
             background: white;
         }
-
         .school-name h1 {
             margin: 0;
             font-size: 22px;
         }
-
         nav {
             display: flex;
             justify-content: center;
@@ -49,7 +42,6 @@
             padding: 15px;
             flex-wrap: wrap;
         }
-
         nav a {
             text-decoration: none;
             color: white;
@@ -58,34 +50,28 @@
             border-radius: 8px;
             transition: 0.3s;
         }
-
         nav a:hover {
             background-color: #1d4ed8;
         }
-
         .slideshow {
             position: relative;
             width: 100%;
             height: 420px;
             overflow: hidden;
         }
-
         .slide {
             display: none;
             width: 100%;
             height: 100%;
         }
-
         .slide img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-
         .active {
             display: block;
         }
-
         .prev,
         .next {
             position: absolute;
@@ -99,33 +85,27 @@
             font-size: 18px;
             border-radius: 5px;
         }
-
         .prev {
             left: 20px;
         }
-
         .next {
             right: 20px;
         }
-
         .prev:hover,
         .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
-
         .container {
             max-width: 1000px;
             margin: 30px auto;
             padding: 20px;
         }
-
         .intro-box {
             background-color: white;
             padding: 25px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-
         footer {
             text-align: center;
             padding: 15px;
@@ -135,10 +115,7 @@
         }
     </style>
 </head>
-
 <body>
-
-    <!-- HEADER -->
      <header>
         <div class="logo-area">
 <header style="background-color:#1e3a8a; padding:15px 40px;">
@@ -152,8 +129,6 @@
             </div>
         </div>
     </header>
-
-    <!-- THANH CLB -->
     <nav>
         <a href="https://dhulg.github.io/english-/" target="_blank">Câu lạc bộ Tiếng Anh</a>
         <a href="https://dhulg.github.io/history/" target="_blank">Câu lạc bộ Lịch Sử</a>
@@ -164,76 +139,57 @@
         <a href="#">Câu lạc bộ E</a>
         <a href="#">Câu lạc bộ F</a>
     </nav>
-
-    <!-- SLIDESHOW -->
     <div class="slideshow">
         <div class="slide active">
             <img src="https://filethpt.hcm.edu.vn/uploadimages/news/2026/thptnguyenhuucanh/2026_2/5/62630964613049068916638842074502372579502863n_5220261436.jpg?w=800"
                 alt="Ảnh 1">
         </div>
-
         <div class="slide">
             <img src="https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/627983778_1309545964533310_7034309324400006038_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEarJmga3blcZO4F4i94YlqL8x_Q4lUO7EvzH9DiVQ7sWU3ANeXpY5TmcHaAZCvySaffClNk9V7L8ENgUveMl5D&_nc_ohc=LhkEPdfNcM8Q7kNvwFtTvJ8&_nc_oc=AdmfE4Fut7RgoUSFmFMyVDkeLV4O4MUZZcB89yAwxelarQWReCg_mFbYM8p9MEjBMIQ&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=Z4qy3G1xoGEKE_WEtwVn-w&oh=00_AfsDkQgWGCELNoVzagpZhVMRfeW9VxUHN2iu9iwsCwCtCw&oe=69939490"
                 alt="Ảnh 2">
         </div>
-
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
         <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
-
-    <!-- GIỚI THIỆU -->
     <div class="container">
         <div class="intro-box">
             <h2>Giới thiệu về trường</h2>
-
             <p>
                 Trường THPT Nguyễn Hữu Cảnh đã và đang từng bước trưởng thành về mọi mặt,
                 luôn hoàn thành tốt chức năng, nhiệm vụ của mình trong quản lý,
                 hoạt động chuyên môn và giáo dục toàn diện học sinh.
             </p>
-
             <p>
                 Đội ngũ cán bộ, giáo viên và nhân viên của trường được biên chế thành
                 12 tổ chuyên môn với đầy đủ các bộ môn.
             </p>
         </div>
     </div>
-
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Trường THPT NGUYỄN HỮU CẢNH</p>
         <p>Địa chỉ: 845 Hương Lộ 2, Phường Bình Trị Đông, TP. Hồ Chí Minh</p>
         <p>Liên hệ: thptnguyenhuucanh.hcm.edu.vn</p>
     </footer>
-
-    <!-- SCRIPT SLIDESHOW -->
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll(".slide");
-
         function showSlide(index) {
             slides.forEach(slide => slide.classList.remove("active"));
             slides[index].classList.add("active");
         }
-
         function changeSlide(step) {
             slideIndex += step;
-
             if (slideIndex >= slides.length) slideIndex = 0;
             if (slideIndex < 0) slideIndex = slides.length - 1;
 
             showSlide(slideIndex);
         }
-
         function autoSlide() {
             slideIndex++;
             if (slideIndex >= slides.length) slideIndex = 0;
             showSlide(slideIndex);
         }
-
         setInterval(autoSlide, 3000);
     </script>
-
 </body>
-
 </html>
